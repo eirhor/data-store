@@ -10,12 +10,12 @@ describe('given an instance of DataStore', () => {
     });
     describe('when I supply the name', () => {
         before(() => {
-            ds.addContent({
+            ds.add({
                 testData: number,
             });
         })
         it('should return the same number', () => {
-            expect(ds.getContent().testData).to.be.equal(number);
+            expect(ds.get().testData).to.be.equal(number);
         })
     })
 });

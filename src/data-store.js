@@ -5,15 +5,15 @@ let _ds = {};
 class DataStore {
     constructor(props) {
         if (props) {
-            this.addContent(props);
+            this.add(props);
         }
     }
 
-    addContent(props) {
+    add(props) {
         _ds = objectAssign({}, _ds, props);
     }
 
-    getContent() {
+    get() {
         return _ds;
     }
 }

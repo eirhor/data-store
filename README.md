@@ -1,9 +1,9 @@
 # DataStore class
 This class is used to provide your classes and functions a common place to store, and retrieve, data.
 
-It has two ways to set data, you can either include them as a object when initializing the `new DataStore({data: "example"})`, or you can use the `DataStore.AddContent({data: "example"})` method.
+It has two ways to set data, you can either include them as a object when initializing the `new DataStore({data: "example"})`, or you can use the `DataStore.add({data: "example"})` method.
 
-To retrieve data, use the `DataStore.GetContent()` method, which will return the entire DataStore.
+To retrieve data, use the `DataStore.get()` method, which will return the entire DataStore.
 
 ## Example of usage
 ### File A
@@ -15,6 +15,12 @@ import DataStore from 'data-store';
 class ClassA {
     constructor() {
         this.ds = new DataStore({
+            title: "Example"
+        });
+
+        // You could also do it like this:
+        this.ds = new DataStore();
+        ds.add({
             title: "Example"
         });
     }
@@ -30,7 +36,7 @@ class ClassB {
     constructor() {
         this.ds = new DataStore();
 
-        this.title = ds.getContent().title;
+        this.title = ds.get().title;
     }
 }
 ```
