@@ -5,6 +5,11 @@ It has two ways to set data, you can either include them as a object when initia
 
 To retrieve data, use the `DataStore.get()` method, which will return the entire DataStore.
 
+## Installation
+```
+npm install --save eirhor-data-store
+```
+
 ## Example of usage
 ### File A
 
