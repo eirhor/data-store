@@ -69,6 +69,7 @@
     "gulp-eslint": "^1.1.1",
     "gulp-load-plugins": "^1.2.0",
     "gulp-util": "^3.0.6",
+    "json-loader": "^0.5.7",
     "mocha": "^2.3.4",
     "object-assign": "^4.0.1",
     "webpack": "^1.12.11",

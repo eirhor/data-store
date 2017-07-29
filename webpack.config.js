@@ -78,11 +78,12 @@ function getBaseConfig(isProd) {
     },
     module: {
       preLoaders: [
-        {test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: "eslint-loader"}
+        { test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: "eslint-loader" }
       ],
       loaders: [
-        {test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: "babel-loader"},
-      ]
+        { test: /\.json$/, loader: 'json-loader' },
+        { test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: "babel-loader" },
+      ],
     },
     eslint: {
         configFile: './.eslintrc'
@@ -100,7 +101,7 @@ function getBaseConfig(isProd) {
     ] : [
       new webpack.DefinePlugin({'process.env': {'NODE_ENV': '"development"'}})
       // Dev plugins here
-    ]
+    ],
   };
 }
 
