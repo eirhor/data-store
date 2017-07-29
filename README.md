@@ -1,5 +1,6 @@
 # DataStore class
 [![Build Status](https://travis-ci.org/eirhor/data-store.svg?branch=master)](https://travis-ci.org/eirhor/data-store)
+[![dependencies Status](https://david-dm.org/eirhor/data-store/status.svg)](https://david-dm.org/eirhor/data-store)
 
 This class is used to provide your classes and functions a common place to store, and retrieve, data.
 
