@@ -46,3 +46,9 @@ class ClassB {
     }
 }
 ```
+
+## Tests
+Tests are ran with the following versions of node.js:
+* iojs
+* 7
+* 6
