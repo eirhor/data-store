@@ -1,4 +1,5 @@
 # DataStore class
+[![Build Status](https://travis-ci.org/eirhor/data-store.svg?branch=master)](https://travis-ci.org/eirhor/data-store)
 This class is used to provide your classes and functions a common place to store, and retrieve, data.
 
 It has two ways to set data, you can either include them as a object when initializing the `new DataStore({data: "example"})`, or you can use the `DataStore.add({data: "example"})` method.
