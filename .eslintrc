@@ -12,6 +12,7 @@
     "modules": true
   },
   "rules": {
+    "indent": [0, 4],
     "no-debugger":1,
     "eqeqeq": 1,
     "key-spacing": 0,

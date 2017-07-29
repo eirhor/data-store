@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "$$PROJECT URL$$"
+    "url": "https://github.com/eirhor/data-store"
   },
   "keywords": [
     "es6",
@@ -38,7 +38,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "$$ISSUES URL$$"
+    "url": "https://github.com/eirhor/data-store/issues"
   },
   "files": [
     "LICENSE",
@@ -47,7 +47,7 @@
     "lib",
     "dist"
   ],
-  "homepage": "$$PROJECT HOMEPAGE URL$$",
+  "homepage": "https://github.com/eirhor/data-store",
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.4.0",
@@ -75,10 +75,13 @@
     "webpack-node-externals": "^0.4.1"
   },
   "library": {
-    "name": "$$PROJECT NAME$$",
-    "entry": "$$PROJECT ENTRY FILENAME$$",
-    "dist-node": "$$NODE DIST FILENAME$$",
-    "dist-web": "$$WEB DIST FILENAME$$",
+    "name": "DataStore",
+    "entry": "data-store.js",
+    "dist-node": "data-store-node.js",
+    "dist-web": "data-store-web.js",
     "bundle-node": true
+  },
+  "dependencies": {
+    "nested-object-assign": "^1.0.0"
   }
 }
