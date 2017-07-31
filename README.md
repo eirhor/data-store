@@ -18,7 +18,7 @@ npm install --save eirhor-data-store
 
 Here we set the title to be example
 ```js
-import DataStore from 'data-store';
+import DataStore from 'eirhor-data-store';
 
 class ClassA {
     constructor() {
@@ -38,7 +38,7 @@ class ClassA {
 Here we retrieve the title from datastore, and bind it to this.title.
 ### File B
 ```js
-import DataStore from 'data-store';
+import DataStore from 'eirhor-data-store';
 
 class ClassB {
     constructor() {
